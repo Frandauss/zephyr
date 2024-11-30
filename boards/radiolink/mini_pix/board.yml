@@ -1,0 +1,6 @@
+board:
+  name: radiolink_mini_pix
+  full_name: Radiolink Mini Pix
+  vendor: radiolink
+  socs:
+    - name: stm32f405xx
