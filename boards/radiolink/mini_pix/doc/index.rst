@@ -1,10 +1,10 @@
-.. zephyr:board:: weact_stm32f405_core
+.. zephyr:board:: radiolink_minipix
 
 Overview
 ********
 
 The Radiolink Mini-Pix Board is drone controller
-board featuring the STM32F405RG, see `STM32F405RG website`_.
+board featuring the STM32F405VG, see `STM32F405VG website`_.
 This is the 64-pin variant of the STM32F405x series,
 see `STM32F405x reference manual`_. More info about the controller available
 on `radiolink`_.
@@ -46,7 +46,7 @@ hardware features:
 +------------+------------+-------------------------------------+
 
 The default configuration can be found in
-:zephyr_file:`boards/radiolink/mini_pix/radiolink_minipix_core_defconfig`
+:zephyr_file:`boards/radiolink/mini_pix/radiolink_minipix_defconfig`
 
 Pin Mapping
 ===========
@@ -83,11 +83,6 @@ Flashing
 
 TBD
 
-
-Debugging
-=========
-
-TBD
 References
 **********
 
