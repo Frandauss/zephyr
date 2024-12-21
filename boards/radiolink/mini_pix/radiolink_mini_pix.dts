@@ -14,8 +14,8 @@
 	compatible = "radiolink,mini_pix", "st,stm32f405";
 
 	chosen {
-		zephyr,console = &usart2;
-		zephyr,shell-uart = &usart2;
+		zephyr,console = &snippet_cdc_acm_console_uart;
+		zephyr,shell-uart = &snippet_cdc_acm_console_uart;
 		zephyr,uart-mcumgr = &usart2;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
@@ -184,6 +184,9 @@ zephyr_udc0: &usbotg_fs {
 	pinctrl-0 = <&usb_otg_fs_dm_pa11 &usb_otg_fs_dp_pa12>;
 	pinctrl-names = "default";
 	status = "okay";
+	snippet_cdc_acm_console_uart: snippet_cdc_acm_console_uart {
+		compatible = "zephyr,cdc-acm-uart";
+	};
 };
 
 &iwdg {
